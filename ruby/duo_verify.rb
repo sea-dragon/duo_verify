@@ -11,8 +11,8 @@ require 'json'
 # you can find this information in the integrations section
 # where you signed up for duo!
 # These are REQUIRED to work.
-# Please use your valid telephone number, in the format given:
-# 	(e.g. 555-867-5309) (area code, 7 digit number, with dashes)
+# Please use your valid E.164-formatted phone number
+# (e.g. +1 555 555-5555 for US country code, area code, and 7 digit number)
 HOST = ""
 SKEY = ""
 IKEY = ""

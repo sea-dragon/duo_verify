@@ -13,7 +13,7 @@ Define the following values at the top of the `duo_verify.php` file:
 - `HOST`  = API hostname
 - `IKEY`  = Integration key
 - `SKEY`  = Secret key
-- `PHONE` = Your phone number in the format of `<country code>``<area code>``<7 digit number>` (in the US, e.g. 15558795309)
+- `PHONE` = E.164-formatted phone number of the call recipient. Spaces and dashes are optional. For example, a US number could look like "+1 555 555-5555" or "+15555555555"
 
 ## PHP Version
 This sample code relies on functions available starting PHP 5.1.2.  You will need to be able to call `hash_hmac()` with a SHA1 digest.
