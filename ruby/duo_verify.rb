@@ -22,7 +22,7 @@ PHONE = ""
 def sign(method, host, path, params)
 	canon = [method.upcase, host.downcase, path]
 	args = []
-	escape_regex = Regexp.new("[^-_a-zA-Z\\d]")
+	escape_regex = Regexp.new("[^-_.~a-zA-Z\\d]")
 	params.sort.each do |k, v|
 		args << URI.escape(k, escape_regex) + '=' + URI.escape(v, escape_regex)
 	end
